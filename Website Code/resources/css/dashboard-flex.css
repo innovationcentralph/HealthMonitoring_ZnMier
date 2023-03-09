@@ -1,0 +1,373 @@
+.header-cover{
+    
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+}
+.dashboard.full {
+    height: 87vh;
+}
+.dashboard {
+    padding: 20px 0;
+}
+
+.dashboard-header {
+    width: 90%;
+    margin-left: 5%;
+    /* padding: 20px; */
+}
+.dashboard-items {
+    width: auto;
+    display: block;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin-left: 2.5%; */
+    /* box-sizing: border-box; */
+    /* margin-top: 10px; */
+    margin: 10px;
+}
+.grid-2 {
+    column-gap: 10px;
+    row-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+}
+
+.grid-2 .dashboard-tile{
+    height: 35vw;
+    display: flex;
+    text-align: center;
+}
+section:first-child{
+    margin-top: 6rem;
+}
+
+.dashboard-tile {
+    
+    border-radius: 5px;
+    /* padding: 10px; */
+    background: #FFFFFF;
+    border: 1px dashed var(--inactive-element);
+    box-shadow: 1px 1px 4px rgb(176 176 176 / 25%);
+    text-align: center;
+}
+.mg-10-0{
+    margin: 10px 0;
+}
+.dashboard-tile.inactive {
+    background: var(--inactive-element);
+}
+
+
+.dashboard-tile.active {
+    background: var(--good-button);
+    color: white;
+}
+
+.tile-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    place-content: center;
+}
+
+.dashboard-tile > .tile-content ~ .tile-content {
+    padding-top: 0;
+}
+
+.tile-label {
+    display: block;
+    font-size: 2rem;
+}
+
+.tile-data {
+    font-size: 4rem;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 5px 0;
+}
+
+
+.tile-data-unit {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.ht-1 {
+    height: calc((100vh - 10rem) / 3);
+    display: flex;
+}.ht-2 {
+    height: calc((100vh - 10rem) / 3 * 2);
+    display: flex;
+}
+
+
+.bg-white .tile-content {
+    color: black;
+    display: flex;
+
+}
+
+.tile-header ,.tile-footer {
+    background: var(--secondary-tabs);
+    padding: 20px;
+    border-radius: 7px 7px 0 0;
+    color: white;
+    text-align: center;
+}
+.tile-footer {
+    
+    background: white;
+    padding-top: 0;
+}
+.tile-footer.flex .action-btn:first-child {
+    margin-right: auto;
+}
+
+.tile-section {
+    width: 100%;
+    margin: 10px 0;
+
+}
+.action-btn {
+    margin: 0 10px;
+}
+.tile-header h2{
+    margin: 0;
+    font-size: 1.3rem;
+}
+span.input-header {
+    font-weight: 600;
+}
+
+.multi-table{
+    
+    margin-bottom: 20px;
+}
+.tile-section h2 {
+    margin-top: 0;
+}
+
+[id*="control-icon-"] {
+    font-size: 7rem;
+    /* pointer-events: none; */
+    cursor: pointer;
+
+}
+[id*="label-icon-"] {
+    font-size: 5rem;
+    display: inline-block;
+    pointer-events: none;
+    vertical-align: middle;
+
+}
+
+.power-on {
+    color: green;
+}
+
+.power-off {
+    color: gray;
+}
+
+
+.statusItem {
+    
+    text-align: left;
+    position: relative;
+    display: flex;
+}
+input.statusIndicators {
+    visibility: hidden;
+}
+[type="checkbox"], [type="radio"] {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.geekmark {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 15px;
+    border-radius: 3px;
+    background-color: #dedede;
+}
+
+.statusItem input:checked ~ .geekmark {
+    background-color: #ff2d1b;
+}
+label.chckbx_lbl {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.checboxItem-inline {
+    display: flex;
+    margin: 7px;
+}
+
+.checboxItem-inline [type="checkbox"] {
+    margin: auto 0;
+}
+
+.checboxItem-inline .textOnInput {
+    padding: 10px 7px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.order-info, .order-summary {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    padding: 2px 20px;
+    align-items: center;
+    color: #696969;
+}
+
+.order-info label, .order-info span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.order-highlight {
+    width: 100%;
+    color: #696969;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px auto;
+    /* font-style: italic; */
+}
+
+
+.order-summary label, .order-summary span {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.order-summary span,  .order-info span {
+    margin-left: auto;
+}
+
+.item {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.add-quantity, .subtract-quantity {
+    padding: 2px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.add-quantity {
+    background-color: var(--good-button);
+}
+.add-quantity:hover {
+    background-color: var(--good-button-active);
+}
+.subtract-quantity {
+    background-color: var(--alert-button);
+}
+
+.subtract-quantity:hover {
+    background-color: var(--alert-button-active);
+}
+
+input.quantity {
+    padding: 0 4px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+    width: 33.33%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background: transparent;
+}
+
+
+.searchbar {
+    width: calc(100% - 40px);
+    margin: auto;
+}
+ul.listview {
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+li.listview-item {
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: white;
+    display: flex;
+    margin: 7px 0;
+}
+.listview-item p {
+    margin: 0;
+}
+
+p.list-title {
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+p.list-content {
+    font-size: 1rem;
+    margin: 3px 0;
+    font-weight: 500;
+}
+.details-section {
+    width: 100%;
+}
+.action-section {
+    width: 20px;
+    text-align: center;
+    /* vertical-align: middle; */
+    align-self: center;
+}
+
+.action-section ion-icon {
+    font-size: 2.3rem;
+}
+ul.context-actions {
+    position: absolute;
+    background-color: #2d2d2d;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    margin-left: calc(50% );
+    margin-top: 50px;
+}
+@media only screen and (min-width: 768px) {
+    .dashboard-items {
+        display: flex;
+    }
+
+    .dashboard-tile {
+        margin: 0;
+    }
+    
+    .dashboard-tile + .dashboard-tile {
+        margin-left: 10px;
+    }
+    section:first-child {
+        margin-top: 0;
+    }
+    /* .header-cover {
+        position: relative;
+    } */
+}

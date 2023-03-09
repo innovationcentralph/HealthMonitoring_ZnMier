@@ -1,0 +1,603 @@
+header, nav {
+    
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+
+
+header.main-header {
+    height: 4.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* font-size: 4rem; */
+    left: 0;
+    top: 0;
+}
+header.nav-header {
+    
+    height: 4.5rem;
+    width: 100%;
+    /* background: rgb(0 36 71 / 90%); */
+    background: var(--tabs);
+    color: var(--tabs-color);
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    /* top: 4.5rem; */
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.icon-logo {
+    /* border-radius: 50%; */
+    /* border: 0.5px solid rgb(46 47 48 / 74%); */
+    height: 4rem;
+    
+    border-radius: 50%;
+    /* border: 0.5px solid rgb(46 47 48 / 74%); */
+    height: 4rem;
+    max-height: 38px;
+}
+.container-user {
+    color: #2C2C2C;
+    margin-left: auto;
+}
+
+
+
+.toggle-bar {
+    color: var(--tabs-color);
+    font-size: 2rem;
+}
+
+.container-tab {
+    color: var(--tabs-color);
+    margin-left: auto;
+}
+
+#headerName {
+    
+    margin: auto;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--header-links-active-color);
+}
+
+/************************ MOBILE NAV ************************/
+.header-cover {
+    height: 6rem;
+}
+
+.sidebar-nav {
+    
+   
+    position: fixed;
+    top: 4.5rem;
+    z-index: 5;
+    width: 100%;
+    background: rgb(44 44 44 / 90%);
+    min-height: 40vh;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.sidebar-nav.pull {
+    min-height: 40vh;
+}
+
+.sidebar-link {
+    margin: 0.5rem 0;
+    display: inline-block;
+    color: #b3b3b3;
+    font-size: 1.5rem;
+}
+.sidebar-link.active, .sidebar-link:hover {
+    color: white;
+}
+
+#numNew {
+    color: #42FFFF;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+/************************ MOBILE NAV ************************/
+
+/************************ MOBILE BANNER ************************/
+
+.banner {
+    position: relative;
+    /* display: block; */
+    width: 100%;
+    min-height: 42vh;
+}
+.banner-photo {
+    border-style: none;
+    max-width: 100%;
+    height: 50vh;
+    position: relative;
+    display: block;
+    background-size: cover;
+    /* background-color: gray; */
+}
+.container-cover-photo {
+    position: absolute;
+}
+.banner-header {
+    
+    position: absolute;
+    top: calc(4.5rem + 10%);
+    z-index: 3;
+    left: 1rem;
+    display: block;
+    color: white;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+}
+
+.banner-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.banner-info {
+    
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    z-index: 3;
+    width: 40%;
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.border-top {
+    width: 80%;
+    height: 3px;
+    background: white;
+}
+.banner-info p {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    margin: 0.7rem 0;
+}
+
+
+.overlay {
+  
+    height: 100%;
+    background: rgb(0 0 0 / 20%);
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+
+    
+}
+.page-overlay{
+
+    height: 100%;
+    background: rgb(0 0 0 / 30%);
+    width: 100%;
+    /* filter: blur(5px); */
+    backdrop-filter: blur(6px);
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.search-pax {
+    
+    position: absolute;
+    z-index: 4;
+    /* display: flex; */
+    background-color: white;
+    width: 60%;
+    padding: 1rem;
+    margin-left: 20%;
+    border: 0.5px solid #494949;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 0.5rem;
+    bottom: -2.5rem;
+    text-align: center;
+}
+
+
+.floating-input {
+    
+    
+    position: absolute;
+    z-index: 4;
+    display: inline-flex;
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    /* margin-left: 30%; */
+    border: 0.5px solid #c2c2c2;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 0.3rem;
+    bottom: -2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+}
+.search-pax .submit-button {
+    margin-left: auto;
+}
+.submit-button input[type="button"] {
+    height: 100%;
+}
+
+iconify-icon, .inline-icon {
+    font-size: 1rem;
+    position: absolute;
+    left: 7px;
+    bottom: 10px;
+    line-height: 1rem;
+    display: block;
+    color: gray;
+}
+
+input.full {
+    width: 100% !important;
+}
+
+.w-80{
+    width: 80% !important;
+    
+    margin-left: 10%;
+}
+
+
+.w-100{
+    width: 100% !important;
+}
+section:first-child, section {
+    margin-top: 70px;
+}
+section:nth-child(){
+    
+    margin-top: 10px;
+}
+section#banner {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+}
+.container-cover-photo {
+    position: absolute;
+}
+section#booking-calendar {
+    position: relative;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.event-categories {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.event-categories li {
+    display: inline-flex;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.event-categories .rec {
+    width: 20px;
+    height: 0.9rem;
+    display: inline-flex;
+    margin: 0 0.5rem;
+}
+
+.event-categories span {
+    display: inline-flex;
+    font-size: 0.9rem;
+}
+
+/************************ MOBILE BANNER ************************/
+
+
+/************************ PAGED FORMS ************************/
+
+.tab {
+    display: none;
+  }
+
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  .visitor-details {
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid gray; */
+    margin-top: 20px;
+    position: relative; 
+    word-break: break-word;
+}
+.visitor-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.form-section {
+    content: "";
+    background: #5e5e5e;
+    position: relative;
+    /* bottom: 0; */
+    left: 15%;
+    height: 0.1px;
+    width: 70%;
+}
+
+
+section#hidden-form {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: white;
+    width: 70%;
+    z-index: 10;
+    padding: 20px;
+}
+  /************************ PAGED FORMS ************************/
+  
+
+
+
+  
+  /************************ ANNOUNCEMENTS FORMS ************************/
+section#announcementsection {
+    position: relative;
+    padding: 1rem;
+}
+
+#announcementsection h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    overflow-wrap: break-word;
+    margin-bottom: 7px;
+
+}
+#announcementsection .date {
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+}
+
+#announcementsection .message {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.announcement-container {
+    padding: 0 0 20px;
+}
+
+
+
+.announcement-button {
+    background: none;
+    padding: 0;
+}
+button.edit {
+    color: blue;
+    margin-right: 20px;
+}
+button.delete {
+    color: red;
+    margin-right: 20px;
+}
+button.view {
+    color: green;
+    margin-right: 20px;
+}
+  /************************ DESKTOP SITES ************************/
+
+
+@media only screen and (min-width: 768px) {
+  /************************ HEADER & BANNNER ************************/
+    .container-cover-photo {
+        width: 100%;
+    }
+    img.banner-photo {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .header-cover {
+        height: 6rem !important;
+        position: relative;
+    }
+    .banner-header h1 {
+        font-size: 5rem;
+    }
+
+    .banner-info {
+        width: 350px;
+    }
+    header.nav-header {
+        height: 6rem;
+    }
+    .icon-logo {    
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        vertical-align: middle;
+        margin: 0 10px;
+        padding: 0;
+    }
+    .header-tab { 
+        display: flex;
+    }
+    .container-user { 
+        margin: auto;
+        display: flex;
+        text-align: center;
+        margin-left: 15px;
+    }
+    .container-user h1 {
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        margin: 0;
+    }
+
+    .inline-nav {
+        margin-left: auto;
+    }
+    .inline-nav .sidebar-item {
+        display: inline;
+        padding: 0 10px;
+    }
+
+    .overlay {
+        background: rgb(0 0 0 / 40%) !important;
+    }
+  /************************ HEADER & BANNNER ************************/
+    
+  
+  /************************ LGU DASHBOARD ************************/
+
+    .content.inline {
+        width: 30%;
+    }
+
+    input[type="submit"], input[type="button"], button{
+     padding: 0.5rem 3rem;
+    }
+    section#announcementsection {
+        display: flex;
+    }
+    #announcementsection .historical {
+        width: 60%;
+        padding: 20px;
+    }
+    #announcementsection .postregistration {
+        width: 40%;
+        padding: 20px;
+    }
+
+    form#postregistrationForm {
+        padding: 20px;
+        border: 0.5px solid #c2c2c2;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+        border-radius: 0.3rem;
+    }
+    
+
+    .modal{
+        
+        width: 60%;
+    }
+    section#bookinglist {
+        margin-top: 70px;
+        /* margin-bottom: 120px; */
+    }
+    section#reportaction {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    h1#dateSelector {
+        
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 20px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.2rem;
+    }
+
+    /* .modal form {
+        max-height: 80vh;
+    } */
+    
+  }
+  .floating-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .toggle-btn {
+        font-size: 50px;
+        cursor: pointer;
+        color: var(--tabs);
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0.1px #5ac4e0;
+    }
+
+    .toggle-btn.inactive {
+        color: gray;
+        box-shadow: 0px 0px 10px 0.1px #b8b8b8;
+    }
+
+    /* .add-btn {
+        font-size: 50px;
+        cursor: pointer;
+        color: var(--tabs);
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0.1px #5ac4e0;
+    }
+
+    
+    .add-btn:hover {
+        content: url(../img/add-hover.png);
+    } */
+    #info-content p {
+        position: absolute;
+        right: 30px;
+        border-radius: 3px;
+        margin: 0;
+        bottom: 95px;
+        padding: 20px;
+        background: #525252;
+        z-index: 10;
+        /* box-shadow: 1px 1px 10px 1px black; */
+        color: white;
+    }
+
+    .datatablecustom thead {
+        background: #07ac35;
+        color: white;
+        text-align: center;
+    }
+  /************************ LGU DASHBOARD ************************/
